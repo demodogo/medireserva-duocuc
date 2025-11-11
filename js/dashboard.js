@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleSection(doctorQuickActions, false);
         toggleSection(doctorUpcomingApp, false);
 
+        toggleSection(patientOverviewCards, true);
+        toggleSection(patientQuickActions, true);
+        toggleSection(patientUpcomingApp, true);
+
     } else if (localStorageRole === 'admin') {
         titleEl.textContent = 'Bienvenido, Doctor 👋';
         subtitleEl.textContent = 'Aquí puedes revisar tus próximas horas o actualizar tu información.'

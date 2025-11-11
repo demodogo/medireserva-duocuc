@@ -55,12 +55,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
             confirmPasswordInput.classList.add('is-valid');
             confirmPasswordInput.classList.remove('is-invalid');
         }
-        const user = {
-            email: emailInput.value,
-            password: passwordInput.value,
-            fullName: fullNameInput.value,
-            phone: phoneInput.value,
-        }
+
         if (isValid) {
             alert('Registro exitoso');
             form.reset();

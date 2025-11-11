@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const dateInput = document.getElementById("appointmentDate");
         const selectedDate = new Date(dateInput.value);
         const today = new Date();
-        today.setHours(0, 0, 0, 0); // limpiar horas
+        today.setHours(0, 0, 0, 0);
 
         if (selectedDate < today) {
             dateInput.classList.add("is-invalid");

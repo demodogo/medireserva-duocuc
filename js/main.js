@@ -11,7 +11,8 @@ function isValidPassword(value) {
 
 function isValidPhoneNumber(value) {
     value = value.trim();
-    return value.length >= 8;
+    const onlyDigits = /^\d+$/;
+    return onlyDigits.test(value) && value.length >= 8;
 }
 
 function isStrongPassword(value) {

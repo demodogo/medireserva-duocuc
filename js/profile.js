@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('profileForm');
 
-    const fullNameInput = document.getElementById('fullNameProfile');
-    const emailInput = document.getElementById('emailProfile');
-    const phoneInput = document.getElementById('phoneProfile');
-    const passwordInput = document.getElementById('newPassword');
-    const confirmPasswordInput = document.getElementById('confirmNewPassword');
+
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-
+        const fullNameInput = document.getElementById('fullNameProfile');
+        const emailInput = document.getElementById('emailProfile');
+        const phoneInput = document.getElementById('phoneProfile');
+        const passwordInput = document.getElementById('newPassword');
+        const confirmPasswordInput = document.getElementById('confirmNewPassword');
         let isValid = true;
 
         if (fullNameInput.value.trim().length < 3) {
@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
             phoneInput.classList.remove('is-invalid');
         }
 
-        const isChanginPassword = passwordInput.value.trim() !== '' && confirmPasswordInput.value.trim() !== '';
+        const isChangingPassword = passwordInput.value.trim() !== '' || confirmPasswordInput.value.trim() !== '';
 
-        if (isChanginPassword) {
+        if (isChangingPassword) {
             if (!isStrongPassword(passwordInput.value)) {
                 passwordInput.classList.add('is-invalid');
                 passwordInput.classList.remove('is-valid');
