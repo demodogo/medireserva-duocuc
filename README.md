@@ -16,9 +16,9 @@ El proyecto simula un sistema de reserva de horas médicas para una clínica, im
 - Bootstrap
 
 ## 🎯 Objetivo
-Demostrar la aplicación práctica de maquetación, diseño responsivo y validación de formularios utilizando tecnologías FrontEnd puras.
+Demostrar la aplicación práctica de maquetación, diseño responsivo y validación de formularios.
 
----
+ ---
 
 📎 **Enlaces**
-- [Tablero Trello](https://trello.com/)
+- [Tablero Trello](https://trello.com/invite/b/69126ea3f2820f36eaa1ec60/ATTId8a8939e7da0af4ae69b79e1f1f3e62fDC4AF3EA/duocfs)

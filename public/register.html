@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MediReserva - Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/globals.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand d-flex  gap-2 align-items-center" href="./login.html">
+            <img src="../assets/img/medicalicon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" /> <span>MediReserva</span>
+        </a>
+    </div>
+</nav>
+<main class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h1 class="h4 text-center mb-4">Crear cuenta</h1>
+
+                        <form id="registerForm" novalidate>
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Nombre completo</label>
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullName"
+                                        name="fullName"
+                                        required
+                                />
+                                <div class="invalid-feedback">
+                                    Ingresa tu nombre completo.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="emailRegister" class="form-label">Correo electrónico</label>
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="emailRegister"
+                                        name="emailRegister"
+                                        required
+                                />
+                                <div class="invalid-feedback">
+                                    Email inválido.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phone"
+                                        name="phone"
+                                        required
+                                />
+                                <div class="invalid-feedback">
+                                    Teléfono inválido
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="passwordRegister" class="form-label">
+                                    Contraseña
+                                </label>
+                                <input
+                                        type="password"
+                                        class="form-control"
+                                        id="passwordRegister"
+                                        name="passwordRegister"
+                                        required
+                                />
+                                <div class="form-text">
+                                    Al menos 8 caracteres, con una letra mayúscula, minúscula, un número y un símbolo.
+                                </div>
+                                <div class="invalid-feedback" id="passwordRegisterError">
+                                    La contraseña no cumple con los requisitos.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="passwordConfirm" class="form-label">
+                                    Confirma tu contraseña
+                                </label>
+                                <input
+                                        type="password"
+                                        class="form-control"
+                                        id="passwordConfirm"
+                                        name="passwordConfirm"
+                                        required
+                                />
+                                <div class="invalid-feedback" id="passwordConfirmError">
+                                    Las contraseñas no coinciden.
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">
+                                Crear cuenta
+                            </button>
+
+                            <p class="text-center mt-3 mb-0">
+                                ¿Ya tienes una cuenta?
+                                <a href="./login.html">Inicia sesión</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <p class="text-center text-muted mt-3 mb-0 small">
+                    &copy; 2025 MediReserva
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- main, js de login  -->
+<script src="../js/main.js"></script>
+<script src="../js/register.js"></script>
+</body>
+</html>
